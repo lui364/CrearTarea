@@ -1,0 +1,36 @@
+
+<div class="row ">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body d-flex justify-content-between">
+                <p class="tarea">TAREAS TERMINADAS: <span style="color: green;">{{completada}}</span></p>
+                <p class="tarea1">TARES ELIMINADAS: <span style="color: red;"> {{eliminar}}</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row d-flex justify-content-center">
+
+    <div class="col-lg-5" style="margin: 10px 0 5px 5px;" *ngFor="let tarea of listadoTarea;let i = index">
+        <div class="card">
+            <div class="card-body">
+                <div class="contenido"  style="text-align: center;" >
+                    <h5 class="card-title"> {{tarea.diaSemana}} </h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{tarea.nombre}}</h6>
+                  </div>
+                  <p class="card-text">{{tarea.descripcion}}</p>
+              <div class="icon d-flex justify-content-between mt-3">
+                <span class="green" (click)="alertT(i)"><i class="fa-sharp fa-solid fa-circle-check" ></i></span>
+                <span class="red"   (click)="alertF(i)"><i class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+
+   

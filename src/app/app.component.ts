@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tarea } from './Models/Tarea';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyecto3';
+  
+  listTarea: any[] = [];
+
+
+  agregarTarea(tarea:Tarea){
+    this.listTarea.push(tarea);
+    console.log(this.listTarea);
+  }
+
+  eliminarTareaListado(index:number){
+    this.listTarea.splice(index,1);
+  }
 }

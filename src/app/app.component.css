@@ -1,0 +1,9 @@
+.navbar{
+    background: #013440;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+   background: #659AA6;
+}

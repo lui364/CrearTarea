@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-body">
+      <h1>Registrar tarea</h1>
+
+      <div class="alert alert-danger" role="alert" style="text-align: center;" *ngIf="formulario">
+        Todos los campos son obligatorios
+      </div>
+
+      <input type="text" class="form-control form-control-lg mt-3" [(ngModel)]="nombre"
+      placeholder="Nombre de la tarea">
+
+
+      <div class="mt-3">
+        <select name="select" id="select" class="form-control form-control-lg" [(ngModel)]="diaSemana">
+          <option value="Lunes">Lunes</option>
+          <option value="Martes">Martes</option>
+          <option value="Miercoles">Miercoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+          <option value="Sabado">Sabado</option>
+          <option value="Domingo">Domingo</option>
+        </select>
+      </div>
+
+      <div class="mt-3">
+        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" [(ngModel)]="descripcion"
+         rows="3" placeholder="Descripcion"></textarea>
+      </div>
+
+      <button class="btn btn-primary btn-block mt-3 btn-lg" (click)="addTarea()">
+        <i class="fa-solid fa-database"></i>&nbsp; Guardar</button>
+
+    </div>
+  </div>
+
+
+
+
+
+

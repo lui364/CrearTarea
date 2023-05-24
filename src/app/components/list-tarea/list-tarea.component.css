@@ -1,0 +1,31 @@
+i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.icon{
+    text-align: center;
+}
+
+.col{
+    margin: 50px;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.tarea{
+    font-weight: 600;
+    color: black;
+}
+
+.tarea1{
+    font-weight: 600;
+    color: black;
+    
+}
